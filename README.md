@@ -1,54 +1,172 @@
-# Insurance Claim Agent (Scaffold)
+# 📰Clear Claim 
 
-End-to-end starter scaffold for a pre-authorization / insurance-claim support agent:
+**AlgoNova's Clear Claim** is a full-stack platform designed to help developers learn, practice, and visualize algorithms efficiently.
+Built using the **MERN Stack**, the platform provides an interactive environment for experimenting with algorithm logic, tracking progress, and improving problem-solving skills.
 
-- `backend/`: Node.js/Express API (serves EHR + insurer policy + orchestrates analysis)
-- `ai-engine/`: Python engine (note parsing, EHR evidence extraction, ICD-10 lookup)
-- `logic/`: Gap analysis + rejection risk scoring (pure JS modules)
-- `frontend/`: Minimal UI stub (static HTML + placeholder React component files)
-- `data/`: `raw/` (never edit), `processed/` (cleaned), `mock/` (frozen Phase 1 JSON)
-- `shared/`: Frozen request/response shapes (`api_contract.json`)
-- `bonus/`: Optional appeal automation scripts (stubs)
+---
 
-## Quick start
+### Live Demo
 
-### 1) Backend API (Node/Express)
+[View Live Demo](#)
 
-From `insurance-claim-agent/backend`:
+---
 
-```bash
-npm install express cors morgan
-node server.js
+## 🌐 Preview
+
+| Feature        | Preview                               |
+| -------------- | ------------------------------------- |
+| Homepage       | <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/e5e3a650-d271-4ffa-946f-c32e9fc21fdf" />
+| DashBoard      | <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/9067ab55-5d81-49cb-b782-99a947aa41c9" />|
+| Code Editor    | <img width="588" height="466" alt="image" src="https://github.com/user-attachments/assets/511a80ac-7d6b-44f7-97d0-3930285e78b0" />|
+
+---
+
+## ✨ Features
+
+* 📚 Algorithm practice environment
+* 🧠 Interactive coding interface
+* ⚡ Fast MERN stack architecture
+* 🔐 Authentication system
+* 📊 Progress tracking
+* 🧩 Modular backend API structure
+
+---
+
+## 🛠 Tech Stack
+
+**Frontend**
+
+* React
+* HTML / CSS
+* JavaScript
+
+**Backend**
+
+* Node.js
+* Express.js
+
+**Database**
+
+* MongoDB
+* SupaBase
+
+**Other Tools**
+
+* Git & GitHub
+* REST APIs
+* Environment Variables
+
+---
+
+## 📂 Project Structure
+
+```
+AlgoNova/
+│
+├── client/          # React frontend
+├── server/          # Node.js backend
+│   ├── routes/
+│   ├── controllers/
+│   ├── models/
+│
+├── public/          # Static assets
+├── preview/         # Screenshots / demo images
+│
+├── package.json
+└── README.md
 ```
 
-API runs on `http://localhost:3001`.
+---
 
-Useful endpoints:
+## ⚙️ Installation & Setup
 
-- `GET /api/ehr/PAT_001`
-- `GET /api/insurance/INS_A`
-- `POST /api/analyze` (runs AI + logic using mock inputs)
-
-### 2) AI Engine (Python)
-
-From `insurance-claim-agent/ai-engine`:
+### 1️⃣ Clone the repository
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-python main.py
+git clone https://github.com/NoBugMERN/AlgoNova.git
 ```
 
-AI engine runs on `http://localhost:8001`.
+### 2️⃣ Navigate to project folder
 
-### 3) Frontend (static)
+```bash
+cd AlgoNova
+```
 
-Open `insurance-claim-agent/frontend/index.html` in a browser.  
-It calls the backend endpoints directly (no build step).
+### 3️⃣ Install dependencies
 
-## Notes
+Frontend:
 
-- This repo is intentionally lightweight: the “AI” parts run with deterministic fallbacks unless you wire in Ollama/LangChain.
-- All inter-service JSON shapes are declared in `shared/api_contract.json`. Treat that file as the source of truth.
+```bash
+cd client
+npm install
+```
+
+Backend:
+
+```bash
+cd ../server
+npm install
+```
+
+### 4️⃣ Create environment file
+
+Create a `.env` file inside the **server folder**.
+
+Example:
+
+```
+PORT=5000
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=your_secret_key
+```
+
+### 5️⃣ Run the project
+
+Backend:
+
+```bash
+npm start
+```
+
+Frontend:
+
+```bash
+npm start
+```
+
+---
+
+## 🚀 Future Improvements
+
+* Algorithm visualization tools
+* Online code execution
+* AI hints for solving problems
+* Leaderboards and challenges
+* User performance analytics
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a new branch
+3. Commit your changes
+4. Submit a Pull Request
+
+---
+
+## 📜 License
+
+This project is licensed under the **Team AlgoNova**.
+
+---
+
+## 👨‍💻 Author
+
+Developed by the **AlgoNova Team**
+
+If you like the project, consider giving it a ⭐ on GitHub!
+
 
