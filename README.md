@@ -83,7 +83,7 @@ AlgoNova/
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/NoBugMERN/AlgoNova.git
+git clone https://github.com/anshkumar2108/insurance-claim-agent.git
 ```
 
 ### 2️⃣ Navigate to project folder
